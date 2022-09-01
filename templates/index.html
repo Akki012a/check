@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli">
@@ -9,22 +9,31 @@
     }
     </script> -->
 </body>
-</html>
+</html> -->
+<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+  
+  <header>
+    <div class="main">
+      <h1> A js library for viewing images in a fully full screen. </h1>
+      <h1> Click the images to see it in action!</h1>
+    </div>
+  </header>
+  <section class="demos">
+    <!-- Using divs for the demo, for formatting... you can use images if you want!  -->
+    <div class="demo-image first" data-image="http://tholman.com/intense-images/img/h1_small.jpg" data-title="Beautiful fields" data-caption="With lots of wheaty puffs. Love those puffs."></div>
+    <div class="demo-image second" data-image="http://tholman.com/intense-images/img/v1_small.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+  </section>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Get Screen Resolution Using JavaScript</title>
-</head>
-<body>
-    <script>
-    function getResolution() {
-        alert("Your screen resolution is: " + screen.width + "x" + screen.height);
+  <footer>
+    <h1> <a href="http://tholman.com" target="_blank">
+      By Tim Holman</a> &bull;
+      <a href="https://github.com/tholman/intense-images" target="_blank">Source & Instructions</a> 
+    </h1>
+  </footer>
+
+  <script>
+    window.onload = function() {
+    var elements = document.querySelectorAll( '.demo-image' );
+    Intense( elements );
     }
-    </script>
-     
-    <button type="button" onclick="getResolution();">Get Resolution</button>
-</body>
-</html>
- -->
+  </script>
